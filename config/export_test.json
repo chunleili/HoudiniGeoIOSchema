@@ -1,0 +1,8 @@
+{
+  "hip": "testHip/test.hip",
+  "node": "/obj/test/OUT",
+  "name": "test",
+  "frame": 0,
+  "output": "output",
+  "format": "npy"
+}
