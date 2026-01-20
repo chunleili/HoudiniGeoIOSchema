@@ -182,7 +182,7 @@ def export_geo_schema(
     # -------------------------------------------------
     # directory layout
     # -------------------------------------------------
-
+    out_root = Path(out_root)
     root = out_root / f"{name}_F{frame}"
 
     dirs = {
