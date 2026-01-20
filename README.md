@@ -57,9 +57,17 @@ Run `install.py` to copy geoschema.py to Houdini user python libs folder(`C:\Use
 
 
 ## Usage2: Call inside Houdini, from python SOP node
-Use a python SOP node.
-TODO
+Use a python SOP node and copy all the code from `geoschema.py` to the node.
 
+In the end of the code, add the following lines:
+
+```python
+...
+hip_dir = hou.expandString("$HIP")
+export_geo_schema(node,hip_dir,"test",1,"ascii")
+```
+
+It will automatically export the geometry named "test" at frame 1 to the folder of hip file in ASCII format.
 
 ## Usage3: Call outside Houdini, from geo/bgeo file
 
